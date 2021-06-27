@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Final Cut Pro X Plugin Fixer</title>
+</head>
+
+<body>
+  <h1>Final Cut Pro X Plugin Fixer</h1>
+  <p>After the 10.4.8 release of Final Cut Pro X some plugins (titles, generators) stopped working showing the red 'missing font' icon. 
+      This happens because some separator layers are not readable by newer versions of FCPX or Motion. 
+      This script is intended to fix this issue by removing said layers. 
+  </p>
+  <p>
+    Source can be found on <a href="https://github.com/StanislavAlexandrov/final-cut-pro-x-motion-fix">GitHub</a>.
+  </p>
+
+  <p>
+    <h4>Instructions:</h4>
+    <ol>
+      <li>Click 'Choose file' and find the title that is not working in your /Users/YOUR_USERNAME/Movies/Motion Templates/Titles... folder. It will have the .moti extension.</li>
+      <li>Save it as a copy in the same folder.</li>
+      <li>Restart Final Cut Pro X if running and test if the title file is working.</li>
+      <li>If all goes well, replace the older .moti file with the patched one.</li>
+    </ol>
+  </p>
+
+  <p>
+    <h4>Important:</h4>
+    <ul>
+      <li>This is very much early beta, use it at your own risk.</li>
+      <li>Always save the patched file as a copy first, you never know what could go wrong.</li>
+      <li>It probably only works in Chrome and Chromium based browser as it uses the File System Access API.</li>
+    </ul>
+  </p>
+<input type="file" class="butOpenFile" />
+
+<script src="js/index.js"></script>
